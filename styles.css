@@ -164,9 +164,35 @@ span{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:2rem;
+    gap:2rem;  
+}
+
+.about-img img{
+    width:35vw;
+}
+
+.heading{
+    text-align:center;
+    font-size:4.5rem;
+}
 
 
+.about-content h2{
+    text-align:left;
+    line-height:1.2;
+}
+
+.about-content h3{
+    font-size:3rem; 
+}
+
+.about-content p{
+    font-size:1.6rem;
+    margin:2rem 0 3rem;
+}
+
+.about-content{
+    margin:100px;
 }
 
 
