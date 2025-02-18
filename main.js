@@ -7,3 +7,7 @@ menuIcon.onclick=()=>{
     navbar.classList.toggle('active');
 }
 
+
+
+// scroll sectin active link
+
