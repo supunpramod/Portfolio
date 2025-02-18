@@ -102,7 +102,7 @@ span{
 
 .home-img img{
     width:30vw;
-    animation:floatImage 4s ease-in-out infinite;
+    /* animation:floatImage 4s ease-in-out infinite; */
 }
 @keyframes floatImage{
     0%{
@@ -151,7 +151,7 @@ span{
     font-size:1.6rem;
     color:black;
     font-weight: 500;
-    transition:.5s ease;
+    /* transition:.5s ease; */
 }
 
 .btn:hover{
@@ -164,7 +164,7 @@ span{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:2rem;  
+    gap:5rem;  
 }
 
 .about-img img{
@@ -192,7 +192,7 @@ span{
 }
 
 .about-content{
-    margin:100px;
+    margin:00px;
 }
 
 .services h2{
