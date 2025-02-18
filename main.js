@@ -38,3 +38,25 @@ window.onscroll=()=>{
 
 };
 
+
+// scroll reveal
+ScrollReveal({ 
+    dustance:'80px',
+    duration:2000,
+    delay:200,
+ });
+
+ ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
+ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'buttom' });
+ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+// typed js 
+
+const typed = new Typed('.multiple-text',{
+    strings:['Web Developer','UI/UX Designer','Multimedia Designer'],
+    typeSpeed:70,
+    backSpeed:70,
+    backDelay:1000,
+    loop:true,
+});
