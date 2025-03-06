@@ -54,9 +54,33 @@ ScrollReveal({
 // typed js 
 
 const typed = new Typed('.multiple-text',{
-    strings:['Web Developer','UI/UX Designer','Multimedia Designer'],
+    strings:['Full Stack Web Developer','Multimedia Designer'],
     typeSpeed:70,
     backSpeed:70,
     backDelay:1000,
     loop:true,
 });
+
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // පිටුව නැවත ලෝඩ් වීම වැලැක්වීම
+  
+    // Form දත්ත ලබාගැනීම
+    var params = {
+      user_name: this.user_name.value,
+      user_email: this.user_email.value,
+      subject: this.subject.value,
+      user_mobile: this.user_mobile.value,
+      message: this.message.value
+    };
+  
+    // EmailJS මගින් ඊමේල් යැවීම
+    emailjs.send("service_wqzmms7", "template_ho0a10y", params)
+      .then(function(response) {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("Failed to send message. Please try again!");
+        console.error("Error:", error);
+      });
+  });
